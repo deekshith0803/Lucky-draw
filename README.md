@@ -41,5 +41,5 @@ A futuristic admin panel using Firebase for user management, featuring secure lo
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/deekshith0803/Lucky-draw.git
+   cd <your-repo>
