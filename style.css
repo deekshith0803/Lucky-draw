@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Title Styling */
+h1,
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.6);
+}
+
+/* Form Container */
+.form-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Group */
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 10px #ff7e5f;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #ff7e5f;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(45deg, #a8e063, #56ab2f);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(88, 171, 47, 0.6);
+}
+
+/* Admin Actions */
+#adminActions {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Glow Effect for Admin Button */
+.gradient-glow {
+  background: linear-gradient(45deg, #ff6a00, #ee0979, #aa00ff);
+  background-size: 200% 200%;
+  animation: glow 3s ease infinite;
+}
+#loginButtonContainer {
+  padding: 30px 20px;
+}
+
+/* User Card Styles */
+.user-card {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header of the Card */
+.user-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ff7e5f;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Text Content */
+.user-card p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #f0f0f0;
+}
+
+.user-card p strong {
+  color: #fecd57;
+  font-weight: bold;
+}
+
+/* Divider Effect */
+.user-card::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.user-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Centered Content */
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 20px 30px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
