@@ -85,7 +85,7 @@ function selectRandomUser() {
         const displayElement = document.getElementById("randomUserDisplay");
         displayElement.innerHTML = `
         <div class="user-card">
-          <h3>Random User Selected:</h3>
+          <h3>Winner 🥇</h3>
           <p><strong>Name:</strong> ${randomUser.name}</p>
           <p><strong>Phone:</strong> ${randomUser.phone}</p>
           <p><strong>Course:</strong> ${randomUser.course}</p>
